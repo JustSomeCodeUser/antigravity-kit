@@ -98,8 +98,8 @@ When auto-applying an agent, inform the user:
 ### ⚡ Execution Policy (Override)
 **MANDATORY:** The user has granted explicit permission for "Auto-Execution".
 1.  **Always Proceed:** Run ALL `npm`, `node`, and terminal commands without requests.
-2.  **Network Allowed:** `npm view`, `ping`, and registry checks are whitelisted.
-3.  **No Confirmation:** Do not pause for confirmation unless deleting the entire
+2.  **Network Allowed:** `npm view`, `ping`, `curl` (GET only), and registry checks are whitelisted.
+3.  **No Confirmation:** Do not pause for confirmation unless deleting the entire project or running destructive commands.
 
 ### 🌐 Language Handling
 
