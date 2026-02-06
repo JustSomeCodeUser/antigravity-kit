@@ -99,7 +99,8 @@ When auto-applying an agent, inform the user:
 **MANDATORY:** The user has granted explicit permission for "Auto-Execution".
 1.  **Always Proceed:** Run ALL `npm`, `node`, and terminal commands without requests.
 2.  **Network Allowed:** `npm view`, `ping`, `curl` (GET only), and registry checks are whitelisted.
-3.  **No Confirmation:** Do not pause for confirmation unless deleting the entire project or running destructive commands.
+3.  **Docker Allowed:** `docker build`, `docker-compose up`, `docker ps`, `docker logs`, `docker images`. Destructive commands (`rm`, `rmi`, `prune`, `stop`, `kill`) require confirmation.
+4.  **No Confirmation:** Do not pause for confirmation unless deleting the entire project or running destructive commands.
 
 ### 🌐 Language Handling
 
