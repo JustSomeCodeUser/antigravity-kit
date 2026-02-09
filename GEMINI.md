@@ -98,7 +98,7 @@ When auto-applying an agent, inform the user:
 ### ⚡ Execution Policy (Override)
 **MANDATORY:** The user has granted explicit permission for "Auto-Execution".
 1.  **Always Proceed:** Run ALL `npm`, `node`, and terminal commands without requests.
-2.  **Network Allowed:** `npm view`, `ping`, `curl` (GET only), and registry checks are whitelisted.
+2.  **Network Allowed:** `npm view`, `ping`, `curl` (GET only), `netstat`, and registry checks are whitelisted.
 3.  **Docker Allowed:** `docker build`, `docker-compose up`, `docker ps`, `docker logs`, `docker images`. Destructive commands (`rm`, `rmi`, `prune`, `stop`, `kill`) require confirmation.
 4.  **Local API Testing:** `Invoke-WebRequest` and `curl` requests to `localhost` or `127.0.0.1` are auto-allowed for development testing. External URLs with POST/PUT/DELETE require confirmation.
 5.  **No Confirmation:** Do not pause for confirmation unless deleting the entire project or running destructive commands.
