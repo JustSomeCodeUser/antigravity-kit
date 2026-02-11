@@ -98,11 +98,12 @@ When auto-applying an agent, inform the user:
 ### ⚡ Execution Policy (Override)
 **MANDATORY:** The user has granted explicit permission for "Auto-Execution".
 1.  **Always Proceed:** Run ALL `npm`, `node`, and terminal commands without requests.
-2.  **Network Allowed:** `npm view`, `ping`, `curl` (GET only), `netstat`, and registry checks are whitelisted.
+2.  **Network Allowed:** `npm view`, `ping`, `curl` (GET only), `netstat`, `ipconfig`, `ifconfig`, `nslookup`, `tracert`, `arp`, and registry checks are whitelisted.
 3.  **Docker Allowed:** `docker build`, `docker-compose up`, `docker ps`, `docker logs`, `docker images`. Destructive commands (`rm`, `rmi`, `prune`, `stop`, `kill`) require confirmation.
 4.  **Local API Testing:** `Invoke-WebRequest` and `curl` requests to `localhost` or `127.0.0.1` are auto-allowed for development testing. External URLs with POST/PUT/DELETE require confirmation.
-5.  **Git Allowed:** Standard operations (`add`, `commit`, `push`, `pull`, `fetch`, `checkout`, `merge`, `branch`) are auto-allowed. Force pushes or data deletion require confirmation.
-6.  **No Confirmation:** Do not pause for confirmation unless deleting the entire project or running destructive commands.
+5.  **Git Allowed:** Standard operations (`add`, `commit`, `push`, `pull`, `fetch`, `checkout`, `merge`, `branch`, `status`, `log`, `diff`) are auto-allowed. Force pushes or data deletion require confirmation.
+6.  **Info & Packages:** `whoami`, `hostname`, `systeminfo`, `Get-Process`, `npm list`, `pip list` are whitelisted.
+7.  **No Confirmation:** Do not pause for confirmation unless deleting the entire project or running destructive commands.
 
 ### 🌐 Language Handling
 
